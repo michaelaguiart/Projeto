@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+</head>
+
+<body>
+
+    <h1 align="center" id="início" style="color:green">Introdução ao <i>HTML!</i></h1>  
+    <hr>
+
+    <h2>Índice</h2>
+
+    <ul>
+        <li><a href="#Estrutura">Estrutura Básica do HTML</a></li>
+        <li><a href="#Tags">Falando sobre Tags</a></li>
+        <li><a href="#Atributos">Atributos das Tags</a></li>
+    </ul>
+
+    <h2 id="Estrutura">Estrutura Básica do HTML</h2>
+
+    <small><a href="#início">(Voltar)</a></small>
+
+    <p>
+        O HTML (HyperText Markup Languace) é uma linguagem de marcação de texto utilizada para documentação e páginas web a partir de marcação de hipertexto. Para começarmos nessa linguagem de marcação de texto é necessário começarmos pela estrutura básica usada no HTML, que são elementos individuais que são combinados para formar uma página HTML inteira.
+
+        <center><img src="img/Estrutura básica do HTML.png" alt="Exemplo de estrutura básica do HTML" width="600px"></center>
+    
+    </p>
+
+    <br><strong>Definição e estrutura básica</strong></br>
+
+    <p>
+        Em 1991 Tim Berners-Lee criou essa linguagem de marcação para melhorar a comunicação entre ele e seus colegas de trabalho no CERN, desde então já surgiram 5 versões e o HTML se tornou a base da web.
+    </p>    
+
+    <p>
+        Com o HTML definimos o significado e a estrutura do conteúdo da web e, além de texto, nossas páginas precisam de imagens, vídeos e vários outros formatos e para isso temos os elementos HTML.
+    </p>
+
+    <p>
+        Um elemento HTML é formado pela tag de abertura e seus atributos, o conteúdo e uma tag de fechamento. E mais à frente veremos que existem elementos que não tem tag de fechamento.
+    </p>
+
+    <p>
+        Com esses elementos podemos agrupar tipos de conteúdo, alterar tamanho e forma de fontes e adicionar diferentes mídias à nossa página na web.
+    </p>
+
+    <p>
+        E agora podemos ver como é a estrutura básica de um arquivo HTML.
+
+        A primeira linha do documento deve ser o (!DOCTYPE html), apesar de parecer um elemento HTML ela apenas diz ao navegador que ele está lidando com um arquivo do tipo HTML5. Os elementos HTML vêm logo abaixo.
+    </p>
+
+    <blockquote>
+        "A web não está concluída, é apenas a ponta do iceberg. As novas mudanças irão balançar o mundo ainda mais." Tim Berners-Lee
+    </blockquote>
+
+    <h3>
+        <strong>(html)</strong>
+    </h3>
+
+    <p>
+        A tag html é a raiz do seu documento, todos os elementos HTML devem estar dentro dela. E nela nós informamos ao navegador qual é o idioma desse nosso documento, através do atributo lang, para o português brasileiro usamos pt-BR.
+    </p>  
+    
+    <h3>
+        <strong>(head)</strong>
+    </h3>
+
+    <p>
+        A tag head contém elementos que serão lidos pelo navegador, como os metadados - um exemplo é o charset, que é a codificação de caracteres e a mais comum é a UTF-8, o JavaScript com a tag script, o CSS através das tags style e link - veremos a diferença quando falarmos sobre CSS - e o título da página com a tag title.
+
+    </p> 
+    
+    <h3>
+        <strong>(title)</strong>
+    </h3>
+
+    <p>
+        Essa tag define o título da sua página, o nome que aparecerá na sua aba, janela ou guia. Por esta razão, a tag >title> é de grande importância para o SEO.
+
+    </p>    
+
+    <h3>
+        <strong>(meta)</strong>
+    </h3>
+
+    <p>
+        Essa tag permite inserir metadados ao seu documento, no caso acima, a informação charset=”UTF-8″, que garante a compatibilidade do código com os caracteres de padrão latino americano.
+
+    </p>    
+
+    <h3>
+        <strong>(body)</strong>
+    </h3>
+
+    <p>
+        E dentro da tag body colocamos todo o conteúdo visível ao usuário: textos, imagens, vídeos.
+    </p>       
+
+    <h2 id="Tags">Falando sobre Tags</h2>
+
+    <small><a href="#início">(Voltar)</a></small>
+
+    <p>
+        As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página.
+    </p>
+
+    <p>
+        As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. As tags que precisam de fechamento possuem a sintaxe <strong>(tag) (/tag)</strong>, já as que não precisam de fechamento possuem como estrutura <strong>(tag/)</strong>.
+    </p>
+
+    <p>
+        Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidade..
+    </p>
+
+    <h2 id="Atributos">
+        Atributos das Tags
+    </h2>
+
+    <small><a href="#início">(Voltar)</a></small>
+    
+    <p>
+        Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.
+    </p>
+
+    <p>
+        A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML, vamos estudá-los:
+    </p>
+
+    <ul>    
+        <li><strong>class=”…“</strong> – Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);</li>
+        <li><strong>id=”…“</strong> – Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);</li>
+        <li><strong>style=”…”</strong> – Permite incluir elementos CSS (estilos) dentro da tag;</li>
+        <li><strong>lang=”…”</strong> – Define o idioma principal do elemento;</li>
+        <li><strong>title=”…”</strong> – Define o título do elemento;</li>
+        <li><strong>alt=”…”</strong> – Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;</li>
+        <li><strong>hidden</strong> – Oculta o elemento;</li>
+        <li><strong>align=”…”</strong> – Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;</li>
+        <li><strong>width=”…”</strong> – Define uma largura para o elemento;</li>
+        <li><strong>height=”…”</strong> – Define uma altura para o elemento.</li>
+    </ul>
+
+    <p>
+        Esses são os principais atributos, porém existem diversos outros que devem ser estudados e podem ser utilizados no seu código.
+    </p>
+
+    <h3>Referências:</h3>
+
+    <ul>
+        <li>
+            <a href="https://www.pensador.com/autor/tim_berners_lee/" target="_blank">Pensador</a>
+        </li>
+
+        <li>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics#:~
+            text=Anatomia%20de%20um%20elemento%20HTML&text=As%20principais%20partes%20de%20um,é%20o%20começo%20do%20parágrafo.
+            " target="_blank">MDN</a>
+        </li>
+
+        <li>
+            <a href="https://pt.wikihow.com/Centralizar-uma-Imagem-em-HTML#:~:text=Digite%20align%3D" target="_blank">WikiHow</a>
+        </li>
+
+        <li>
+            <a href="http://www.fundacaobradesco.org.br/vv-apostilas/cursoHTML/Cabecalhos.html" target="_blank">Bradesco</a>
+        </li>
+
+        <li>
+            <a href="https://web.dio.me/course/introducao-ao-html-na-pratica/" target="_blank">Dio.me</a>
+        </li>
+
+</body>
+
+</html>  
